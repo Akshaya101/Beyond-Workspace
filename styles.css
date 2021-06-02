@@ -8,6 +8,18 @@ a:hover{
 h1{
     font-family: 'Pattaya', sans-serif;
 }
+h2{
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    color:#eb3c27;
+}
+.links{
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0px;
+    color: crimson;
+}
 /* body{
     background-color: #fbe6c2;
 } */
@@ -106,8 +118,7 @@ h1{
     }
     p{
         text-align: center;
-        margin:100px;
-        margin-top: 70px;
+        margin:80px 80px 70px 80px;
     }
     #title{
         padding-top: 150px;
@@ -119,6 +130,7 @@ p{
     font-family: 'Athiti', sans-serif;
     font-size: 1.2rem;
     font-weight: medium;
+    margin-bottom: 30px;
 }
 /* i:hover{
     font-size: 45px;
