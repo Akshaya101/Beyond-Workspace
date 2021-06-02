@@ -27,12 +27,27 @@ h1{
     font-family: 'Pattaya', sans-serif;
     font-size: 2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
     .navbar-brand{
         display: none;
     }
     #title{
         padding-top: 200px;
+    }
+    .text{
+        display: none;
+    }
+    .text-r {
+        display: none;
+    }
+    .text-p {
+        display: none;
+    }
+    .row{
+        margin: auto;
+    }
+    img{
+        margin-right:200px ;
     }
 }
 /*title*/
@@ -55,6 +70,31 @@ h1{
     #title{
         padding-top: 150px;
     }
+    img{
+        margin-left: 170px;
+        margin-top:20px;
+    }
+    .text p{
+        width: 200px;
+        background-color: antiquewhite;
+    }
+    .text-r {
+        display: none;
+    }
+    .text-p {
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    #footer{
+        margin: 0px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    #footer .row{
+        margin-left: 150px;
+    }
 }
 
 @media screen and (min-width:1000px) {
@@ -72,7 +112,9 @@ h1{
     #title{
         padding-top: 150px;
     }
+    
 }
+
 p{
     font-family: 'Athiti', sans-serif;
     font-size: 1.2rem;
@@ -104,6 +146,12 @@ i{
 }
 .bottom{
     margin-top: 20px;
+    margin-bottom: 0px;
+}
+#travel img{
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
 }
 /*read*/
 #read{
@@ -117,6 +165,11 @@ i{
     border: thistle;
     padding: 50px;
 }
+#read img{
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
+}
 /*photography*/
 #photography{
     background: url(images/p-bg.jpg) no-repeat center center fixed; 
@@ -129,6 +182,11 @@ i{
     border: thistle;
     padding: 50px;
 }
+#photography img{
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
+}
 /*footer*/
 #footer{
     background-color: #f9ebc4;
@@ -139,3 +197,4 @@ i{
     text-align: center;
     margin-bottom: 30px;
 }
+
