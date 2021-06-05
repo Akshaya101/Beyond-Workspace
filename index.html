@@ -173,8 +173,12 @@
     
     <section id="newsletter">
         <div class="container">
-           <h1 class="n-text display-4">Newsletter!</h1>
-           <p class="n-text">Let's talk about it!</p>
+           <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center"><h1 class="n-text display-4">Newsletter!</h1></div>
+           </div>
+           <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center"><p class="n-text">Let's talk about it!</p></div>
+           </div>
            <div class="row  d-flex justify-content-center">
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="input-group">
@@ -212,32 +216,32 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="mailto:chanchala9119@gmail.com" method="POST" enctype="text/plain" name="Form_Details">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" placeholder="First Name" name="first_name">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" placeholder="Last Name" name="last_name">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" placeholder="user@email.com">
+                            <input type="email" class="form-control" placeholder="user@email.com" name="email">
                         </div>
                         <div class="form-group">
                             <label>Write your query</label>
-                            <textarea class="form-control" rows="3" placeholder="Query..."></textarea>
+                            <textarea class="form-control" rows="3" placeholder="Query..." name="query"></textarea>
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn">Save</button>
+                    <button type="submit" class="btn" value="send">Submit</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
