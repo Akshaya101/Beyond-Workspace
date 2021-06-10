@@ -3,6 +3,12 @@ a{
     font-family: 'Athiti', sans-serif;
     color: #000;
 }
+.container-fluid{
+    padding: 0px 20px 0px 20px;
+}
+.carousel-item img{
+    max-width: 100%;
+}
 a:hover{
     text-decoration: none;
 }
@@ -22,6 +28,9 @@ body{
 .navbar{
     padding: 40px 30px 30px 30px;
     background-color: transparent;
+}
+.navbar::-webkit-scrollbar{
+    background-color: #f9ebc4 !important;
 }
 .nav-link{
     text-align: center;
@@ -51,7 +60,7 @@ p{
 } */
 #title{
     background-color: #f9ebc4;
-    /* background: url(images/r-bg.jpg) no-repeat center center fixed; 
+    /* background: url(images/summer.jpg) no-repeat center center fixed; 
     background-size: cover;
     background-blend-mode:lighten; */
 }
@@ -65,17 +74,20 @@ p{
 /*footer*/
 i{
     font-size: 2rem;
-    color: #eb3c27;
+    /* color: #eb3c27; */
+    color: #f9ebc4;
     text-align: center;
     padding: 20px;
 }
 #footer{
-    background-color: #f9ebc4;
+    /* background-color: #f9ebc4; */
+    background-color: #eb3c27;
     padding: 100px;
 }
 #footer p{
     text-align: center;
     padding: 10px;
+    color: #f9ebc4;
 }
 
 #components{
@@ -166,6 +178,9 @@ i{
        text-align: center;
        order: 2;
    }
+   .image-box{
+       display: none;
+   }
    img{
     height:auto;
     width:auto;
@@ -176,7 +191,22 @@ i{
     .navbar{
         background-color: #f9ebc4;
     }
+    .images{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
+
+@media (min-width: 992px){
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        align-self: center;
+        max-width: 50%;
+    }
+}
+
 
 @media only screen and (min-device-width: 1024px){
     .display-1{
@@ -185,24 +215,34 @@ i{
     }
     #title p{
         text-align: center;
-        margin: 80px 80px 110px 80px;
+        padding: 90px;
+    }
+    .title-text{
+        margin-bottom: 0px;
     }
     .text{
-        padding: 50px;
+        padding: 100px 50px;
         text-align: center;
     }
     .text p{
         padding: 20px;
     }
+    .images{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .images:hover{
+        opacity: 0.7;
+    }
     .image-box{
-        padding: 0px;
+        padding: 0px 15px 0px 15px;
     }
     img{
         height:auto;
         width:auto;
     }
     #scrollable .text{
-        padding: 50px;
+        /* padding: 100px 50px 100px 50px; */
         text-align: center;
     }
     #components{
@@ -217,6 +257,14 @@ i{
     }
     #components h3{
         color: white;
+    }
+    .blog{
+        height: 400px;
+        width: 400px;
+        text-align: center;
+    }
+    .ch{
+        background-color: #fff;
     }
 }
 
@@ -242,6 +290,9 @@ i{
     }
     .navbar{
         background-color: #f9ebc4;
+    }
+    .image-box{
+        display: none;
     }
  }
 
