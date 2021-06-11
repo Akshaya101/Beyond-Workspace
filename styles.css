@@ -29,9 +29,10 @@ body{
     padding: 40px 30px 30px 30px;
     background-color: transparent;
 }
-.navbar::-webkit-scrollbar{
+/* .navbar::-webkit-scrollbar{
     background-color: #f9ebc4 !important;
-}
+} */
+
 .nav-link{
     text-align: center;
     font-family: 'Athiti', sans-serif;
@@ -67,6 +68,7 @@ p{
 .links{
     font-size: 1.1rem;
 }
+
 /*scrollable*/
 #scrollable {
     background-color: #f9ebc4;
@@ -78,6 +80,9 @@ i{
     color: #f9ebc4;
     text-align: center;
     padding: 20px;
+}
+i:hover{
+    transform: scale(1.2);
 }
 #footer{
     /* background-color: #f9ebc4; */
@@ -233,6 +238,7 @@ i{
     }
     .images:hover{
         opacity: 0.7;
+        transform: scale(1.02);
     }
     .image-box{
         padding: 0px 15px 0px 15px;
